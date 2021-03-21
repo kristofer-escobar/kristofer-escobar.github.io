@@ -1,46 +1,51 @@
-# Getting Started with Create React App
+<h1 align="center">
+  Flexible Gatsby
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a0a6e226-6c7a-43e0-bab6-0c658c8abca5/deploy-status)](https://app.netlify.com/sites/flexible-gatsby/deploys)
 
-## Available Scripts
+A simple minimalist Gatsby starter for your blog. [Demo](https://flexible-gatsby.netlify.com/).
 
-In the project directory, you can run:
+Inspired by [flexible-jekyll](https://github.com/artemsheludko/flexible-jekyll).
 
-### `npm start`
+![home-page-screenshot](./static/promo-img.jpg)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![home-page-screenshot](./static/home-page.jpg)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+![blog-page-screenshot](./static/post-example.jpg)
 
-### `npm test`
+## Quick Start 🚀
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1.  **Create a Gatsby site.**
 
-### `npm run build`
+    Use the Gatsby CLI to create a new site, specifying the default starter.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    ```sh
+    # create a new Gatsby site using the-plain-gatsby starter
+    gatsby new my-blog https://github.com/wangonya/flexible-gatsby
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2.  **Start developing.**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    Navigate into your new site’s directory and start it up.
 
-### `npm run eject`
+    ```sh
+    cd my-blog/
+    gatsby develop
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+3.  **Open the source code and start editing!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    Your site is now running at `http://localhost:8000`!
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+    Edit `gatsby.config.js` to update site metadata.
 
-## Learn More
+    Add blog posts in markdown in `content/blog`. Example blog posts have been provided.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Contributors
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Much thanks to these contributors for making this project awesome:
+
+-   [@sparky005](https://github.com/sparky005)
