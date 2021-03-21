@@ -1,13 +1,13 @@
 module.exports = {
   siteMetadata: {
-    title: `Flexible Gatsby`,
+    title: `Kristofer Escobar`,
     description: `I am a web developer focusing on front-end development. Always hungry to keep learning.`,
     author: `Kristofer Escobar`,
-    siteUrl: `https://github.com/wangonya/flexible-gatsby`,
+    siteUrl: `https://kristofer-escobar.github.io`,
     social: {
       twitter: ``,
       facebook: ``,
-      github: `https://github.com/kristofer-escobar`,
+      github: `kristofer-escobar`,
       linkedin: ``,
       email: `kristofer.s.escobar@gmail.com`,
     },
@@ -68,13 +68,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `flexible-gatsby-starter`,
-        short_name: `flexible-gatsby`,
+        name: `Kristofer Escobar`,
+        short_name: `Kristofer Escobar`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `./static/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `./static/pic.jpg`, // This path is relative to the root of the site.
       },
     },
     // `gatsby-plugin-offline`,
