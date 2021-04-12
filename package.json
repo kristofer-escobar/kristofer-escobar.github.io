@@ -1,11 +1,11 @@
 {
-  "name": "flexible-gatsby",
+  "name": "Kristofer Escobar",
   "private": true,
-  "description": "A starter for a paginated blog powered by Gatsby and Markdown",
-  "version": "1.2.0",
-  "author": "Kinyanjui Wangonya",
+  "description": "A blog powered by Gatsby and Markdown",
+  "version": "1.0.0",
+  "author": "Kristofer Escobar",
   "bugs": {
-    "url": "https://github.com/wangonya/flexible-gatsby/issues"
+    "url": "https://github.com/kristofer-escobar/issues"
   },
   "dependencies": {
     "gatsby": "^3.1.0",
