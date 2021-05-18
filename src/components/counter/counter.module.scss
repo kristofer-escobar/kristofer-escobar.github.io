@@ -1,0 +1,20 @@
+.section {
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+.h3 {
+  margin: 0;
+}
+
+.p {
+  color: red;
+}
+
+.button {
+  &:not(:last-of-type) {
+    margin-right: 0.5rem;
+  }
+  
+  width: 50px;
+}

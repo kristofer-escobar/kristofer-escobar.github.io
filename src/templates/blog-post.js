@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import { kebabCase } from 'lodash'
 import { GatsbyImage } from 'gatsby-plugin-image'
+import { MDXRenderer } from "gatsby-plugin-mdx"
 
 import DefaultLayout from '../components/layout'
 import SEO from '../components/seo'
@@ -10,7 +11,7 @@ import 'katex/dist/katex.min.css'
 
 class BlogPostTemplate extends React.Component {
   render() {
-    const post = this.props.data.markdownRemark
+    const post = this.props.data.mdx
 
     return (
       <DefaultLayout>
@@ -41,7 +42,7 @@ class BlogPostTemplate extends React.Component {
                     <span>{post.frontmatter.date}</span>
                   </div>
                 </header>
-                <div dangerouslySetInnerHTML={{ __html: post.html }} />
+                <MDXRenderer>{post.body}</MDXRenderer>
                 <div className="page-footer">
                   <div className="page-tag">
                     {post.frontmatter.tags &&
@@ -73,10 +74,10 @@ export const pageQuery = graphql`
         author
       }
     }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+    mdx(fields: { slug: { eq: $slug } }) {
       id
       excerpt(pruneLength: 160)
-      html
+      body
       frontmatter {
         title
         date(formatString: "YYYY, MMM DD")

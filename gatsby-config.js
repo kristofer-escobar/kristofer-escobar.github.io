@@ -27,33 +27,6 @@ module.exports = {
         name: `assets`,
       },
     },
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 970,
-            },
-          },
-          {
-            resolve: `gatsby-remark-katex`,
-            options: {
-              strict: `warn`,
-            },
-          },
-          {
-            resolve: `gatsby-remark-copy-linked-files`,
-            options: {
-              destinationDir: `files`,
-              ignoreFileExtensions: [`png`, `jpg`, `jpeg`, `bmp`, `tiff`],
-            },
-          },
-          `gatsby-remark-prismjs`,
-        ],
-      },
-    },
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
@@ -80,5 +53,33 @@ module.exports = {
     // `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: [`.md`, `.mdx`],
+        gatsbyRemarkPlugins: [
+          `gatsby-remark-prismjs`,
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 970,
+            },
+          },
+          {
+            resolve: `gatsby-remark-copy-linked-files`,
+            options: {
+              destinationDir: `files`,
+              ignoreFileExtensions: [`png`, `jpg`, `jpeg`, `bmp`, `tiff`],
+            },
+          },
+          {
+            resolve: `gatsby-remark-katex`,
+            options: {
+              strict: `warn`,
+            },
+          },
+        ],
+      },
+    },
   ],
 }
