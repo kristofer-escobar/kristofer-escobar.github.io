@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import * as styles from './counter.module.scss'
 
-const Test = () => {
+const Counter = () => {
   const [count, setCount] = useState(0)
 
   const increment = () => {
@@ -21,9 +21,11 @@ const Test = () => {
       <button className={styles.button} onClick={increment}>
         +
       </button>
-      <button className={styles.button} onClick={decrement}>-</button>
+      <button className={styles.button} onClick={decrement}>
+        -
+      </button>
     </section>
   )
 }
 
-export default Test
+export default Counter
