@@ -75,7 +75,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-katex`,
             options: {
-              strict: `warn`,
+              strict: `ignores`,
             },
           },
         ],

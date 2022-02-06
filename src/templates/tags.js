@@ -18,12 +18,14 @@ const Tags = ({ pageContext, data }) => {
               const { title, date } = node.frontmatter
               const { slug } = node.fields
               return (
-                <span key={slug}>
-                  <Link to={slug}>{title}</Link>
-                  <small>
-                    <span> | {date}</span>
-                  </small>
-                </span>
+                <li key={slug}>
+                  <span key={slug}>
+                    <Link to={slug}>{title}</Link>
+                    <small>
+                      <span> &nbsp;&nbsp;{date}</span>
+                    </small>
+                  </span>
+                </li>
               )
             })}
           </ul>
